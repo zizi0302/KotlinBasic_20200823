@@ -33,6 +33,20 @@ class MainActivity : AppCompatActivity() {
 
 //        변수에 저장된 문구를 => 토스트의 재료로 사용
             Toast.makeText(this, inputContent, Toast.LENGTH_SHORT).show()
+            when (inputContent) {
+                "안녕하세요" -> {
+                    Toast.makeText(this, "인사", Toast.LENGTH_SHORT).show()
+                }
+                "안녕히 가세요" -> {
+                    Toast.makeText(this, "작별 인사", Toast.LENGTH_SHORT).show()
+                }
+                "맛있게 드세요" -> {
+                     Toast.makeText(this, "식사 인사", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                     Toast.makeText(this, "그 외의 문장", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
 
     }
