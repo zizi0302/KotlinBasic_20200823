@@ -10,6 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        clickMeBtn.setOnClickListener {
+//            클릭 미 버튼이 눌리면 실행될 코드 {  }
+            Log.d("메인화면", "클릭 미 버튼 눌림")
+        }
+
         makeLogBtn.setOnClickListener {
             Log.d("메인화면", "로그 남기기 버튼 눌림")
             Log.d("메인화면", "실행되면 안되는 코드에 대한 체크")
