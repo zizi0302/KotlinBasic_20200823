@@ -49,5 +49,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        changeTextBtn.setOnClickListener {
+//            messageEdt에 저장된 문구를 String으로 받아서(출력)
+
+            val inputMessage = messageEdt.text.toString()
+
+//            resultTxt의 문구 (text속성의 값)로 반영 (set)
+
+            resultTxt.text = inputMessage
+        }
+
     }
 }
